@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
-console.log("Category fo id ", req.params.id)
+console.log("Category for id ", req.params.id)
  Category.findOne({ //success or error 
     where: {
       id: req.params.id
