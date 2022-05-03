@@ -31,7 +31,7 @@ console.log("Category for id ", req.params.id)
 });
 
 router.post('/', (req, res) => {
-  console.log("New category Information", req.body);
+  console.log("New Category Information", req.body);
   // create a new category
   Category.create(req.body)
   .then(result=>res.json(result))

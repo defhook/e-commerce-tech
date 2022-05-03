@@ -13,9 +13,9 @@ router.get("/", (req, res) => {
       { model: Tag }
     ]
   })
-    .then((productData) => {
+    .then((dbProductData) => {
       //success
-      res.json(productData);
+      res.json(dbProductData);
     })
     .catch(
       (
@@ -45,9 +45,9 @@ router.get("/:id", (req, res) => {
       { model: Tag }
     ]
   })
-    .then((productData) => {
+    .then((dbProductData) => {
       //success
-      res.json(productData);
+      res.json(dbProductData);
     })
     .catch(
       (
@@ -60,6 +60,7 @@ router.get("/:id", (req, res) => {
 
 // create new product
 router.post("/", (req, res) => {
+  console.log("New Product Information", req.body);
   /* req.body should look like this...
     {
       product_name: "Basketball",
