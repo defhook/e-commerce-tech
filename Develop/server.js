@@ -5,12 +5,12 @@ const sequelize = require("./config/connection");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-console.log("1"); 
+console.log("Successful Connection"); 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 
 app.use(routes);
-console.log("2"); 
+//console.log("2"); 
 
 // sync sequelize models to the database, then turn on the server
 
