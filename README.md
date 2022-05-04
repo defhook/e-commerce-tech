@@ -16,4 +16,4 @@ An e-commerce back-end database which uses the CRUD functionality.
 Made by Alvin Badillo🙉
 
 ## Video link of e-commerce database in action
-[Working e-commerce database](video of url)
+[Working e-commerce database](https://drive.google.com/file/d/16UloP8SbuWTsnibpGZgVcLYNBOYhpVzU/view)
